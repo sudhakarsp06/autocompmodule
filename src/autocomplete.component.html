@@ -1,0 +1,15 @@
+<div class="autocomplete container">
+  <div class="wrapper-box">
+    <div class="single-item-wrapper">
+      <div *ngFor="let selected of selectedItems" class="single-item">{{selected.value}}
+        <span (click)="removeItem(selected)" class="close">X</span>
+      </div>
+    </div>
+    <textarea placeholder="Type in" [(ngModel)]="searchInput" class="text-box" (keyup)="onSearch($event)"></textarea>
+  </div>
+  <div class="list-wrapper">
+    <ul class="list" *ngIf="filteredItems.length > 0 && listState === true">
+      <li (click)="onSelection(option);" *ngFor="let option of filteredItems">{{option.value}}</li>
+    </ul>
+  </div>
+</div>
