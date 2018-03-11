@@ -1,6 +1,6 @@
 {
-  "name": "autocompmodule",
-  "version": "0.1.0",
+  "name": "autocomplete-module",
+  "version": "0.1.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/sudhakarsp06/autocompmodule"
@@ -14,7 +14,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sudhakarsp06/autocompmodule/issues"
+    "url": "https://github.com/sudhakarsp06/autocompmodule"
   },
   "main": "autocompmodule.umd.js",
   "module": "autocompmodule.js",
